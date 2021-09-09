@@ -212,6 +212,7 @@ nav {
 }
 img {
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .container {
@@ -265,7 +266,7 @@ img {
     background-color: #14213d;
     margin-top: 1rem;
     color: #eee;
-    padding: 0.5rem 1rem 1rem;
+    padding: 0.5em 0.8em;
     letter-spacing: 00.5px;
     text-align: center;
 }
