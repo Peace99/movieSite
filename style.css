@@ -93,7 +93,6 @@ header {
 nav {
     background: #14213d;
     padding: 1rem 1.5rem;
-
   }
 
 .nav-header {
@@ -102,8 +101,9 @@ nav {
     justify-content: space-between;
   }
 .nav-toggle{
+  display: flex;
     font-size: 1.5rem;
-    color: var(--clr-grey-1);
+    color: #fca311;
     background: transparent;
     border-color: transparent;
     transition: var(--transition);
