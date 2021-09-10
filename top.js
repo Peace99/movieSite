@@ -1,20 +1,3 @@
-const navToggle = document.querySelector(".nav-toggle")
-const linkContainer = document.querySelector(".links-container")
-const links = document.querySelector(".links")
-
-navToggle.addEventListener("click", function(){
-    //linkContainer.classList.toggle("show-links")
-    const containerHeight = linkContainer.getBoundingClientRect().height
-    const linkheight = links.getBoundingClientRect().height
-
-    if (containerHeight === 0){
-        linkContainer.style.height = `${linkheight}px`
-    }
-    else {
-        linkContainer.style.height = 0
-    }
-})
-
 const api_key = "api_key=02904aaa6140ad4e8e75cd0725d9b635"
 const base_url = "https://api.themoviedb.org/3"
 const  topRated = base_url + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&"+api_key
