@@ -3,7 +3,7 @@ const base_url = "https://api.themoviedb.org/3"
 
 const now_showing = base_url + "/discover/movie?primary_release_date.gte=2021-07-11&primary_release_date.lte=2021-09-01&"+ api_key
 const popular = base_url + "/discover/movie?sort_by=popularity.desc&"+api_key
-const topRated = base_url + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&"+api_key
+const topRated = base_url + "/discover/movie?certification_country=US&certification=R&sort_by=vote_average.desc&"+api_key
 
 const image_url = "https://image.tmdb.org/t/p/w500"
 const container = document.querySelector(".container-wrapper")
