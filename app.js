@@ -45,10 +45,11 @@ function showMovies(data){
     container.innerHTML= ''
     
     data.forEach(movie => {
-        const {title, poster_path,release_date} = movie
+        const {title, poster_path,release_date,id} = movie
         const movie1 = document.createElement("div")
         movie1.classList.add('container')
         movie1.innerHTML = `
+        <a href="movie_info.html?movie_id=${id}">
         <img src="${image_url+poster_path}"alt="${title}">
         <div class="movie-title">
            <h3>${title}</h3>
@@ -56,6 +57,7 @@ function showMovies(data){
         <div class="movie-info">
             <h3 class="date">${release_date}</h3>
          </div>
+        </a>
         `
 
         container.appendChild(movie1)
@@ -106,6 +108,7 @@ function showTopRated(data2) {
 } )
 }
 
-function movie(e){
-
+function getMovieId (){
+    const param = new URLSearchParams(window.location.search)
+    return param.get("movie_id")
 }
