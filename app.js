@@ -9,7 +9,7 @@ const image_url = "https://image.tmdb.org/t/p/w500"
 const container = document.querySelector(".container-wrapper")
 const container1 = document.querySelector(".container-wrapper1")
 const container2 = document.querySelector(".container-wrapper2")
-
+  
 getNowShowing(now_showing)
 getPopular(popular)
 getTopRated(topRated)
